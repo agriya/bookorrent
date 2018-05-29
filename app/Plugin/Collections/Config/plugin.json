@@ -1,0 +1,18 @@
+{
+	"name" : "Collections",
+	"description" : "By enabling this, item owner can add updates on their items and get comments over them.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"parent": "1.Plugins For All Modules.Children.Items.Children",
+	"dependencies": {
+		"plugins" : {
+			"Items" : "Items"
+		}
+	},
+	"icon" : "file",
+	"disable" : 1,
+	"delete" : 1,
+	"module_id": "638",
+	"module_hash": "ecc89985111f405924927401d0fac902"
+}

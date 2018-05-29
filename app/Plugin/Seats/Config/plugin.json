@@ -1,0 +1,18 @@
+{
+	"name" : "Seats",
+	"description" : "By enabling this, User able to book selected seat.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"parent": "1.Plugins For All Modules.Children.Items.Children",
+	"dependencies": {
+		"plugins" : {
+			"Items" : "Items"
+		}
+	},
+	"icon" : "th",
+	"disable" : 1,
+	"delete" : 1,
+	"module_id": "",
+	"module_hash": ""
+}

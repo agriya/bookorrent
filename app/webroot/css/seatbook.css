@@ -1,0 +1,181 @@
+
+/*-form block-*/
+
+.col-md-12,.col-md-6 ,.col-md-4,.col-xs-12{
+   position: relative;
+   min-height: 1px;
+   padding-left: 15px;
+   padding-right: 15px;
+   float:left;
+}
+
+.col-md-12 {
+	width:100%;
+}
+
+.col-md-6 {
+	width:39%;
+}
+
+.col-md-4 {
+	width:28.33%;
+}
+
+
+.ver-mlspace {
+    margin: 30px 0 30px 0;
+}
+
+.span-m4{
+	width:132px;
+}
+
+.select-category {
+	width:100%
+}
+
+.seat-grid {
+	margin: 0 auto;
+}
+
+.blank-row {
+    padding-bottom: 2px;
+}
+
+/*- end of formblock */
+
+/*- seat block -*/
+.row-selector, .row-deselector, .col-selector, .col-deselector, .seat-all-toggle, .seat-all-toggled {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #f38015;
+    background: #f38015;
+    color: #fff;
+    display: inline-block;
+    zoom: 1;
+    margin: 1px 2px;
+	font-size:10px;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+	line-height:15px;
+}
+
+.row-selector, .row-deselector {
+    float: left;
+}
+
+.seat, .seatc ,.seat-not,.no-seat{
+    height: 15px;
+    width: 16px;
+    border: 1px solid #97cd3e;
+    display: inline-block;
+	background-color: #97cd3e !important;
+	float:left;
+    zoom: 1;
+    margin: 1px 3px;
+    padding: 5px;
+}
+
+.seat, .seatc {
+	background-color: #97cd3e !important;
+	border: 1px solid #97cd3e;
+	cursor: pointer;
+}
+
+.seat-not {
+	background-color:#9d9fa2 !important;
+	border-color:#9d9fa2 !important;
+    cursor: no-drop;
+}
+
+.no-seat{
+	background-color:#fff !important;
+	border-color:#fff !important;
+    cursor: no-drop;
+}
+
+.selected{
+   /* background: url('correct.png') no-repeat center center;*/
+	background-size: 17px;
+	background-color:#ff0000 !important;
+}
+
+.seat:hover, .seat-hovered, .all-hovered .seat {
+    border-color: #f38015 !important;
+}
+
+.seat input {
+    display: none;
+}
+
+.available-products  ul li   >a {
+    color: #636466;
+    padding: 6px 4px;
+    border-radius: 4px;
+    text-decoration: none;
+	font-size: 11px;
+} 
+
+.available-seats,.no-available,.seat-selected  {
+	padding: 0px 9px;
+}
+
+.available-seats {
+	background-color: #97cd3e;
+}
+
+.no-available {
+	background-color: #9d9fa2;
+}
+
+.seat-selected {
+	background-color: #ff0000;
+}
+
+/*- end of seat-block -*/
+
+/*- affix class -*/
+
+.affix-top {
+	position:absolute;
+	background-color:#fff;
+	right:0;
+	left:0;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.top-content-space {
+	padding-top:400px;
+}
+
+/*- end affix class -*/
+
+
+/*- responsive codes -*/
+
+@media (max-width: 767px) {
+	.col-xs-12 {
+		width:91%;
+	}
+	.span-m4 {
+		width: 50%;
+		float: left;
+	}
+	.select-category {
+		width: 100% !important;
+	}
+	.input-formc {
+		width:100% !important;
+	}
+	.responsive-table {
+	    overflow-x: auto;
+	}
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+	.span-m4 {
+		width: 101px;
+	}
+}
+/*- end of responsive codes -*/

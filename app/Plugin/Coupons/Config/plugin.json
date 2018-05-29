@@ -1,0 +1,18 @@
+{
+	"name" : "Coupons",
+	"description" : "By enabling this, item owner can add coupons.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"parent": "1.Plugins For All Modules.Children.Items.Children",
+	"dependencies": {
+		"plugins" : {
+			"Items" : "Items"
+		}
+	},
+	"icon" : "ticket",
+	"disable" : 1,
+	"delete" : 1,
+	"module_id": "639",
+	"module_hash": "b3ed41363c522e22ef7652bf538a2c96"
+}

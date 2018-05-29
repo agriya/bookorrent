@@ -1,0 +1,309 @@
+/* chart styles start */
+div.item-chart-block {
+	padding:10px 0 0 10px;
+	margin:0 0 10px 0;
+	border:1px solid #ddd;
+	height:225px;
+	float:none;
+	z-index:0;
+}
+ul.item-chart {
+	height:80px;
+	padding:85px 0 34px 6px;
+	z-index:2;
+	float:left;
+	margin:0px 0 20px 0px;
+}
+ul.item-chart li span, ul.item-chart, div.item-chart-block, ul.item-chart > li{
+	position:relative;
+}
+ul.item-chart li a:hover {
+	text-decoration:underline;
+}
+ul.item-chart li span.helptip {
+	position:absolute;
+	right: -10px;
+	top: -10px;
+	z-index:999999;
+}
+ul.item-chart li a, ul.item-chart li span {
+	color:#fff;
+	font-size: 12px;
+	font-weight:bold;
+	line-height: 13px;
+	white-space: nowrap;
+	height:25px;
+	display:block;
+}
+ul.item-chart li a {
+	height:20px;
+}
+ul.item-chart li a, ul.item-chart li span span {
+	padding: 5px 5px 0px;
+}
+ul.item-chart li span {
+	padding: 0 0 0 3px;
+}
+ul.item-chart li.new-booking span {
+	color:#333;
+}
+ul.item-chart > li {
+	background: url("../img/chart-arrows.png") no-repeat 0 -4px;
+	float: left;
+	padding: 0 0 0 58px;
+}
+ul.item-chart > li.cleared {
+	background: url("../img/chart-arrows.png") no-repeat 0 1px -401px;
+	padding: 0 0 0 33px;
+}
+ul.item-chart > li.completed {
+	background:none;
+	padding: 0 0 0 138px;
+}
+ul.item-chart > li:first-child {
+	background:none;
+	padding:0;
+}
+span.new-booking span {
+	padding:0;
+}
+span.new-booking, span.pending-approval, span.pending-approval a, ul.item-chart span.confirmed, ul.item-chart span.confirmed a, ul.item-chart span.arrived, ul.item-chart span.arrived a, span.cleared, span.cleared a, ul.item-chart span.completed, ul.item-chart span.completed a, span.payment-pending, span.payment-pending a, ul.item-chart span.rejected, ul.item-chart span.rejected a, span.canceled, span.canceled a, ul.item-chart span.expired, ul.item-chart span.expired a, span.canceled-by-admin, span.canceled-by-admin a, span.booker-review, span.booker-review a, span.host-review, span.host-review a {
+	background:url("../img/chart-bg.png") no-repeat 0 0px;
+}
+span.new-booking span {
+	background:url("../img/chart-bg.png") no-repeat right -28px;
+}
+span.pending-approval {
+	background-position:0 -243px;
+}
+span.pending-approval a {
+	background-position:right -271px;
+}
+ul.item-chart span.confirmed {
+	background-position:0 -853px;
+}
+ul.item-chart span.confirmed a {
+	background-position:right -881px;
+}
+ul.item-chart span.arrived {
+	background-position:0 -975px;
+}
+ul.item-chart span.arrived a {
+	background-position:right -1003px;
+}
+span.cleared {
+	background-position:0 -1341px;
+}
+span.cleared a {
+	background-position:right -1369px;
+}
+ul.item-chart span.completed {
+	background-position:0 -1463px;
+}
+ul.item-chart span.completed a {
+	background-position:right -1491px;
+}
+span.payment-pending {
+	background-position:0 -122px;
+}
+span.payment-pending a {
+	background-position:right -150px;
+}
+ul.item-chart span.rejected {
+	background-position:0 -365px;
+}
+ul.item-chart span.rejected a {
+	background-position:right -393px;
+}
+span.canceled {
+	background-position:0 -732px;
+}
+span.canceled a {
+	background-position:right -760px;
+}
+ul.item-chart span.expired {
+	background-position:0 -488px;
+}
+ul.item-chart span.expired a {
+	background-position:right -516px;
+}
+span.canceled-by-admin {
+	background-position:0 -610px;
+}
+span.canceled-by-admin a {
+	background-position:right -638px;
+}
+span.booker-review {
+	background-position:0 -1098px;
+}
+span.booker-review a {
+	background-position:right -1126px;
+}
+span.host-review {
+	background-position:0 -1220px;
+}
+span.host-review a {
+	background-position:right -1248px;
+}
+ul.item-chart li.active > span, ul.item-chart li.active > a {
+	height:29px;
+}
+ul.item-chart li.active > span a, ul.item-chart li.active > span span {
+	padding-top:8px;
+}
+ul.item-chart li.active > span.new-booking {
+	background-position:left -56px;
+}
+ul.item-chart li.active > span.new-booking span {
+	background:url("../img/chart-bg.png") no-repeat right -89px;
+}
+ul.item-chart li.active > span.pending-approval {
+	background-position:0 -299px;
+}
+ul.item-chart li.active > span.pending-approval a {
+	background-position:right -332px;
+}
+ul.item-chart li.active > span.confirmed {
+	background-position:0 -909px;
+}
+ul.item-chart li.active > span.confirmed a {
+	background-position:right -942px;
+}
+ul.item-chart li.active > span.arrived {
+	background-position:0 -1031px;
+}
+ul.item-chart li.active > span.arrived a {
+	background-position:right -1064px;
+}
+ul.item-chart li.active > span.cleared {
+	background-position:0 -1397px;
+}
+ul.item-chart li.active > span.cleared a {
+	background-position:right -1430px;
+}
+ul.item-chart li.active > span.completed {
+	background-position:0 -1519px;
+}
+ul.item-chart li.active > span.completed a {
+	background-position:right -1552px;
+}
+ul.item-chart li.active > span.payment-pending {
+	background-position:0 -178px;
+}
+ul.item-chart li.active > span.payment-pending a {
+	background-position:right -211px;
+}
+ul.item-chart li.active > span.rejected {
+	background-position:0 -421px;
+}
+ul.item-chart li.active > span.rejected a {
+	background-position:right -454px;
+}
+ul.item-chart li.active > span.canceled {
+	background-position:0 -788px;
+}
+ul.item-chart li.active > span.canceled a {
+	background-position:right -821px;
+}
+ul.item-chart li.active > span.expired {
+	background-position:0 -544px;
+}
+ul.item-chart li.active > span.expired a {
+	background-position:right -577px;
+}
+ul.item-chart li.active > span.canceled-by-admin {
+	background-position:0 -666px;
+}
+ul.item-chart li.active > span.canceled-by-admin a {
+	background-position:right -699px;
+}
+ul.item-chart li.active > span.booker-review {
+	background-position:0 -1154px;
+}
+ul.item-chart li.active > span.booker-review a {
+	background-position:right -1187px;
+}
+ul.item-chart li.active > span.host-review {
+	background-position:0 -1276px;
+}
+ul.item-chart li.active > span.host-review a {
+	background-position:right -1309px;
+}
+div.payment-block-left, div.rejected-block, div.expired-block, div.confirmed-top-block, div.confirmed-bottom-block, div.booker-review-block, div.host-review-block {
+	height: 65px;
+	left: 10px;
+	padding: 0 0 0 23px;
+	top: -50px;
+	position: absolute;
+}
+div.rejected-block {
+	left: 78px;
+}
+div.expired-block {
+	height: auto;
+	left: 30px;
+	padding-top: 29px;
+	top: 24px
+}
+div.payment-block-left {
+	background: url("../img/chart-arrows.png") no-repeat 0 -64px;
+}
+div.payment-block-right {
+	background: url("../img/chart-arrows.png") no-repeat -50px -153px;
+	height: 65px;
+	padding: 0 20px 0 0;
+}
+div.rejected-block {
+	background: url("../img/chart-arrows.png") no-repeat 58px -230px;
+}
+div.expired-block {
+	background: url("../img/chart-arrows.png") no-repeat 58px -330px;
+}
+div.rejected-block ul li.canceled, div.expired-block ul li.canceled-by-admin {
+	background: url("../img/chart-arrows.png") no-repeat 21px -963px;
+	left: 140px;
+	position: absolute;
+	top: 1px;
+	height:65px;
+}
+div.expired-block ul li.canceled-by-admin {
+	background: url("../img/chart-arrows.png") no-repeat 15px -331px;
+	height: auto;
+	padding-top: 28px;
+}
+div.confirmed-top-block {
+	background: url("../img/chart-arrows.png") no-repeat 10px -251px;
+	height: 30px;
+	left: 60px;
+	padding: 0;
+	top: -28px;
+	width: 60px;
+}
+div.confirmed-bottom-block {
+	background: url("../img/chart-arrows.png") no-repeat 10px -331px;
+	height: auto;
+	left: 61px;
+	padding: 12px 0 0;
+	top: 24px;
+	width: 48px;
+}
+div.booker-review-block {
+	background: url("../img/chart-arrows.png") no-repeat 0 -752px;
+	left: -10px;
+	top:-49px;
+	padding: 0 0 0 43px;
+}
+div.host-review-block {
+	background: url("../img/chart-arrows.png") no-repeat 0 -664px;
+	height: auto;
+	left: -10px;
+	padding: 32px 0 0 43px;
+	top: 21px;
+}
+div.booker-review-block ul li div.booker-arrow {
+	background: url("../img/chart-arrows.png") no-repeat 121px -842px;
+	height: 65px;
+	position: absolute;
+	width:200px;
+}
+/* chart styles ended */

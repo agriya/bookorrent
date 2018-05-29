@@ -1,0 +1,14 @@
+{
+	"name" : "Insights",
+	"description" : "By enabling this, site admin and item owners can see exclusive statistics display over the items.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"parent": "1.Plugins For All Modules.Children.Growth Hacking.Children",
+	"subplugin" : "",
+	"icon" : "bar-chart",
+	"disable" : 1,
+	"delete" : 1,
+	"module_id": "634",
+	"module_hash": "d60be3689cccf095001fc52dff564b30"
+}

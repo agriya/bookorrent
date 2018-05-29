@@ -1,0 +1,20 @@
+{
+	"name" : "Requests",
+	"description" : "By enabling this, user can request the any item for booking.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"parent": "1.Plugins For All Modules.Children",
+	"subplugin" : "RequestFavorites,RequestFlags",
+	"dependencies": {
+		"plugins" : {
+			"Items" : "Items"
+		}
+	},
+	"icon" : "mail-reply-all",
+	"disable" : 1,
+	"delete" : 1,
+	"settings" : "true",
+	"module_id": "642",
+	"module_hash": "12826d17dcd005a10a990b7b38edad97"
+}

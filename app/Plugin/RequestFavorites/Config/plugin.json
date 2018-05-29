@@ -1,0 +1,18 @@
+{
+	"name" : "Request Favorites",
+	"description" : "By enabling this, User can add request as favorities.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"parent": "1.Plugins For All Modules.Children.Requests.Children",
+	"dependencies": {
+		"plugins" : {
+			"Requests" : "Requests"
+		}
+	},
+	"icon" : "upload-alt",
+	"disable" : 1,
+	"delete" : 1,
+	"module_id": "643",
+	"module_hash": "dfcbabab73d067f8628e32b228ff8496"
+}

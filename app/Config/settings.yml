@@ -1,0 +1,216 @@
+---
+affiliate.commission_holding_period: 0
+affiliate.commission_on_every_item_booking: 1
+affiliate.payment_threshold_for_threshold_limit_reach: 1
+affiliate.referral_cookie_expire_time: 10
+affiliate.site_commission_amount: 1
+affiliate.site_commission_type: amount
+barcode.height: 120
+barcode.is_barcode_enabled: 1
+barcode.width: 120
+captcha.challenge_key: 
+captcha.hash_key: 
+captcha.verification_key: 
+cdn.css: 
+cdn.images: 
+cdn.is_cdn_enabled: 0
+cdn.js: 
+cloudflare.email: 
+cloudflare.is_cloudflare_enabled: 0
+cloudflare.token: 
+facebook.app_id: 
+facebook.fb_access_token: 
+facebook.fb_user_id: 
+facebook.is_enabled_facebook_connect: 1
+facebook.page_id: 
+facebook.secrect_key: 
+facebook.site_facebook_url: 
+google.consumer_key: 
+google.consumer_secret: 
+google.is_enabled_google_connect: 1
+google.translation_api_key: 
+google_analytics.access_token: 
+google_analytics.profile_id: 
+googleplus.consumer_key: 
+googleplus.consumer_secret: 
+googleplus.is_enabled_googleplus_connect: 1
+Hook.bootstraps: >
+    SecurityQuestions,MobileApp,Wallet,Withdrawals,Items,ItemFavorites,ItemFlags,Requests,RequestFavorites,RequestFlags,HighPerformance,Translation,Sudopay,Insights,SocialMarketing,Affiliates,Collections,Coupons,IntegratedGoogleAnalytics,Seats
+HtmlCache.is_htmlcache_enabled: 0
+invite.facebook: 'Check out this website ##SITE_NAME## ##REFERRAL_URL##'
+invite.twitter: 'Check out this website ##SITE_NAME## ##REFERRAL_URL##'
+invite.yahoo_consumer_key: 
+invite.yahoo_secret_key: 
+item.alt_name_for_booker_singular_caps: Booker
+item.alt_name_for_booker_singular_small: booker
+item.alt_name_for_item_plural_caps: Listings
+item.alt_name_for_item_plural_small: listings
+item.alt_name_for_item_singular_caps: Listing
+item.alt_name_for_item_singular_small: listing
+item.auto_expire: 1
+item.auto_suspend_item_on_system_flag: 1
+item.auto_suspend_message_on_system_flag: 1
+item.booking_service_fee: 0
+item.count_display_type: rounded
+item.host_commission_amount: 5
+item.is_auto_approve: 1
+item.is_enable_edit_item_image: 1
+item.is_enable_item_count: 0
+item.item_fee: 5
+item.item_fee_payer: Site
+item.max_upload_photo: 5
+item.maximum_description_length: 450
+item.maximum_title_length: 200
+item.minimum_title_length: 8
+item.payment_gateway_fee_id: Site
+item.set_default_calendar_type: calendar
+item.weekstartson: Sunday
+linkedin.consumer_key: 
+linkedin.consumer_secret: 
+linkedin.is_enabled_linkedin_connect: 1
+mail.is_smtp_enabled: 0
+mail.mail.smtp_port: 465
+mail.smtp_host: 
+mail.smtp_password: 
+mail.smtp_username: 
+Memcached.is_memcached_enabled: 0
+Memcached.servers: 192.168.1.7
+messages.is_send_email_on_new_message: 1
+messages.is_send_internal_message: 1
+messages.send_notification_mail_for_sender: 0
+meta.description: dev1 framework
+meta.keywords: agriya, dev1
+openid.is_enabled_openid_connect: 1
+pre_launch.bg_image: 
+pre_launch.bg_image_stretch_type : Stretch
+RedisSession.hostname: 192.168.1.7
+RedisSession.is_redis_session_enabled: 0
+RedisSession.port: 1377
+request.auto_suspend_request_on_system_flag: 1
+request.is_auto_approve: 0
+s3.aws_access_key: 
+s3.aws_secret_key: 
+s3.bucket_name: 
+s3.end_point: 
+s3.is_cname_enabled: 0
+s3.is_enabled: 0
+s3.keep_copy_in_local: 0
+s3.upload_static_content_enabled: 0
+seat.maximum_seat_blocking_time: 5
+seat.seat_selection_fee: 0
+seat.seat_selection_fee_payer: User
+share.facebook: 'Check out this website ##SITE_NAME## ##SHARE_URL##'
+share.twitter: 'Check out this listing ##ITEM_NAME## ##SHARE_URL##'
+site.contact_email: productdemo.admin+contact+bookorrent@gmail.com
+site.currency_code: USD
+site.currency_id: 1
+site.currency_symbol_place: right
+site.date.format: %b %d, %Y
+site.date.tooltip: %b %d, %Y %I:%M %p
+site.datetime.format: %b %d, %Y %I:%M %p
+site.datetime.tooltip: %B %d, %Y %I:%M:%S %p (%A) %Z
+site.datetimehighlight.tooltip: %B %d, %Y %I:%M:%S %p (%A) %Z
+site.distance_limit: 30
+site.duration_to_invite: Daily
+site.exact_distance_limit: 2
+site.from_email: productdemo.admin+from+bookorrent@gmail.com
+site.iphone_app_key: 12345678
+site.is_auto_currency_updation: 1
+site.is_currency_conversion_history_updation: 1
+site.is_ssl_enabled: 0
+site.language: en
+site.launch_mode: Launched
+site.look_up_url: http://whois.sc/
+site.maintenance_mode: 0
+site.name: BookorRent
+site.no_of_users_to_invite: 50
+site.no_of_users_to_invite_per_time: 50
+site.pre_launch_content: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Proin blandit nisi non nisl fermentum sit amet volutpat eros
+    tincidunt. Sed tempor blandit gravida.
+site.private_beta_content: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Proin blandit nisi non nisl fermentum sit amet volutpat eros
+    tincidunt. Sed tempor blandit gravida.
+site.reply_to_email: 
+site.robots: 
+site.time.format: %I:%M %p
+site.time.tooltip: %B %d, %Y (%A) %Z
+site.tracking_script: |
+    <script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-18572079-14']); _gaq.push(['_setDomainName', '.dev.agriya.com']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script>
+site.version: v1.0b4
+suspicious_detector.suspiciouswords: |
+    stupid
+    fool
+    \\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*([,;]\\s*\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*)*
+    ^0[234679]{1}[\\s]{0,1}[\\-]{0,1}[\\s]{0,1}[1-9]{1}[0-9]{6}$
+system.captcha_type: Normal
+thumb_size.big_thumb.height: 130
+thumb_size.big_thumb.width: 139
+thumb_size.category_thumb.height: 350
+thumb_size.category_thumb.width: 950
+thumb_size.collage_thumb.height: 96
+thumb_size.collage_thumb.width: 310
+thumb_size.collection_thumb.height: 192
+thumb_size.collection_thumb.width: 310
+thumb_size.iphone_big_thumb.height: 102
+thumb_size.iphone_big_thumb.width: 160
+thumb_size.iphone_small_thumb.height: 60
+thumb_size.iphone_small_thumb.width: 100
+thumb_size.medium_big_thumb.height: 303
+thumb_size.medium_big_thumb.width: 458
+thumb_size.medium_thumb.height: 45
+thumb_size.medium_thumb.width: 45
+thumb_size.micro_thumb.height: 18
+thumb_size.micro_thumb.width: 18
+thumb_size.normal_big_thumb.height: 190
+thumb_size.normal_big_thumb.width: 250
+thumb_size.normal_thumb.height: 35
+thumb_size.normal_thumb.width: 35
+thumb_size.rectagle_thumb.height: 96
+thumb_size.rectagle_thumb.width: 155
+thumb_size.small_big_thumb.height: 170
+thumb_size.small_big_thumb.width: 170
+thumb_size.small_thumb.height: 28
+thumb_size.small_thumb.width: 28
+thumb_size.sub_category_thumb.height: 147
+thumb_size.sub_category_thumb.width: 185
+thumb_size.very_big_thumb.height: 361
+thumb_size.very_big_thumb.width: 957
+twitter.consumer_key: 
+twitter.consumer_secret: 
+twitter.is_enabled_twitter_connect: 1
+twitter.prompt_for_email_after_register: 1
+twitter.site_twitter_url: 
+twitter.site_user_access_key: 
+twitter.site_user_access_token: 
+twitter.site_username: 
+user.days_after_fetch_facebook_friends: 1
+user.is_admin_activate_after_register: 0
+user.is_admin_mail_after_register: 1
+user.is_allow_user_to_switch_currency: 1
+user.is_allow_user_to_switch_language: 1
+user.is_auto_login_after_register: 0
+user.is_email_verification_for_register: 1
+user.is_enable_normal_registration: 1
+user.is_logout_after_change_password: 1
+user.is_welcome_mail_after_register: 1
+user.maximum_withdraw_amount: 10000
+user.minimum_withdraw_amount: 2
+user.remember_me_cookie_prefix: re
+user.remember_me_maxlife: 5
+user.remember_me_maxlogins: 5
+user.remember_me_pages: items/add
+user.remember_me_secure: Only the listed pages
+user.signup_fee: 0
+user.signup_fee_payer: Site
+user.using_to_login: username
+wallet.max_wallet_amount: 200000
+wallet.min_wallet_amount: 10
+wallet.wallet_fee_payer: Site
+widget.browse_script: 
+widget.footer_script: '<img src="http://placehold.it/728X90" alt ="728X90" width="728" height="90"/>'
+widget.item_script: 
+widget.user_script: '<img src="http://placehold.it/728X90" alt ="728X90" width="728" height="90"/>'
+yahoo.is_enabled_yahoo_connect: 1
