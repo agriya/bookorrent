@@ -1,162 +1,79 @@
-Installation Steps
-------------------
-### Server Requirements
+# BookorRent
 
-    ** PHP Version - 5.2.7+ (preferably 5.5)
-        * Extensions
-            GD Version - 2.x+
-            PCRE Version - 7.x+
-            cURL version - 7.x+
-            json version - 1.x+
-            PDO
-            Freetype
-            mbstring
-            PHP ionCube Loader
-        * php.ini settings
-            max_execution_time - 180 (not mandatory)
-            max_input_time - 6000 (not mandatory)
-            memory_limit - 128M (at least 32M)
-            safe_mode - off
-            open_basedir - No Value
-            display_error = On
-            magic_quotes_gpc = Off
-    ** MySQL Version - 5.x
-    ** Apache - 1+ (preferably 2+)
-        Modules
-            mod_rewrite
-            mod_deflate (not mandatory, but highly recommended for better performance–gzip)
-            mod_expires (not mandatory, but highly recommended for better performance–browser caching)
-    Recommended Linux distributions: Centos / Ubuntu / RedHat
+BookorRent is an open source online platform for the booking and rental software. 
 
-### Initial Configurations
+> This is project is part of Agriya Open Source efforts. BookorRent was originally a paid script and was selling around 12000 Euros. It is now released under dual license (OSL 3.0 & Commercial) for open source community benefits.
 
-* Extract Files
-	
-		Unzip the zip file
+![bookorrent_banner](https://user-images.githubusercontent.com/4700341/47916499-6b518780-decc-11e8-8f79-11685ccc7867.png)
+![bookorrent_available options](https://user-images.githubusercontent.com/4700341/47916512-73112c00-decc-11e8-8c39-14d447f1415b.png)
 
-Upload the unzipped files in server.
 
-* Need write permission for following folders
+## Support
 
-Note: The above folders need to be writable (Have to chmod to 655 or 755 or 775 depending upon the server configuration. Note: 777 is highly discouraged).
+BookorRent is an open source online booking and rental project. Full commercial support (commercial license, customization, training, etc) are available through [Bookorrent platform support](https://www.agriya.com/products/booking-rental-software)
 
-    Make sure the permission as read,write and executable as recursively for the below directories
+Theming partner [CSSilize for design and HTML conversions](http://cssilize.com/)
 
-    app/Config
-    app/media
-    app/tmp
-    app/webroot
-    app/webroot/js
-    app/webroot/img
-    app/webroot/css
-    app/Console/Command/cron.sh
-    app/Console/Command/CronShell.php
-    core/lib/Cake/Console/cake
-    core/vendors/securimage
+## Features
 
-### Updating site logo
+### Multi-Language Support
 
-There are few places where site logo is located. To change the logo, you need to replace your logo with the exact name and resolution in the following mentioned directories.
-
-    * Site Logo
-
-    app/webroot/img/logo.png                      - 285 x 57
-
-    * Favicon
-
-     app/webroot/favicon.ico                        - 16 x 16
-
-### Configure Apache
-
-* If you can reset 'DocumentRoot'
-
-Reset your Apache DocumentRoot to /public_html/app/webroot/ by following means:
-
-    If you're on dedicated hosting, reset DocumentRoot in httpd.conf with /public_html/app/webroot/
-    If you're on shared hosting, reset your virtual directory to point to /public_html/app/webroot/
-
-Note: This requirement is not mandatory, but highly preferred to skip the following tweaks in htaccess files.
-
-* If you cannot reset 'DocumentRoot'
-
-Installing site directly in the root e.g., http://yourdomain.com/
-
-Again, no need to tweak 'htaccess' files.
-
-Installing site as a sub-folder e.g., http://yourdomain.com/myfolder
-
-    app/.htaccess ensure the RewriteBase as below:
-
-RewriteBase    /myfolder/app/
-
-    app/webroot/.htaccess ensure the RewriteBase as below:
-
-RewriteBase	/myfolder/
-
-### Set Your Directory Index (Homepage)
-
-We have set default directory index for the bookorrent is index.html and its mentioned in app/webroot/.htaccess file, index.html created automatically in bookorrent for home page quick load. If you want to override the settings then you need to remove index.html in the following line in app/webroot/.htaccess file,
-
-DirectoryIndex index.php
-
-### Setting up cron
-
-* Setup the cron with any one of the following command,
-
-		*/2 * * * * /home/public_html/app/Console/Command/cron.sh 1>> /home/public_html/app/tmp/error.log 2>> /home/public_html/app/tmp/error.log
-
-Also you need to edit '/home/public_html/app/Console/Command/cron.sh' file to change the folder path of each command. Note: Please replace ”/home/public_html/” with your folder path.
-
-(or)
-
-php4 is enabled for shell command in some server, above command will not work. In that case, you can use anyone of the following commands,
-
-* Command 1:
-
-Check php installed path in server using ssh command. which php or which php5. It will give output like /usr/bin/php5.
-
-		vi /home/public_html/core/lib/Cake/Console/cake
+Translation of front end with multilingual support. Site visitors can translate any webpage by click the drop-down box beside language.
+                                        
+### Flexible Booking
  
-		exec php -q ${LIB}cake.php -working "${APP}" "$@"
+Booker can check the availability before booking. Booker can choose multiple choices among the listed availabilities.
 
- In the above file, change the php path with your server php5 installed path,
+### Fixed Booking
 
-		exec /usr/bin/php5 -q ${LIB}cake.php -working "${APP}" "$@"
+Booker can choose any date from the list. Booker can choose multiple choices among the listed pricings. If seat selection enabled in listing, booker can choose anyone pricing and can choose their own seats.
 
-(or)
+### Payment
 
-* Command 2:
+Multiple payment gateway can be enabled using ZazPay account and Wallet.
 
-		*/2 * * * * wget http://yourdomain.com/cron/main
-		0 0 * * * wget http://yourdomain.com/cron/daily
+### Seats
 
-(or)
+Host can manage seats & Halls. Enable / Disable Seat Selection in post Listing page. Host can arrange seats in their own way. Host can manage Seat Arrangement, Seat Add, Seat Preview.
 
-* Command 3:
+### Flexible ticket booking option
 
-		*/2 * * * * lynx http://yourdomain.com/cron/main
-		0 0 * * * lynx http://yourdomain.com/cron/daily
+By using dynamic ticket booking options, user can book tickets for events either fixed dates with fixed price or variable dats with fixed price.
 
-(or)
+### Nearby listing
 
-* Command 4:
+Bookers can easily know about exact location of listed items. It helps them to choose items near their location easily.                                   
+### Affiliate
 
-		*/2 * * * * curl http://yourdomain.com/cron/main
-		0 0 * * * curl http://yourdomain.com/cron/daily
+User can associate/refer our site to a different network thereby referred user can earn commission.
 
-### Install your site
+## Getting Started
 
-Now run the site http://yourdomain.com/ or http://yourdomain.com/myfolder and install your site easily. Please follow the steps, BookorRent Installer.
+### Prerequisites
 
-### Verify Your Configuration
+#### For deployment
 
-* Running site for the first time
+* MySQL
+* PHP >= 5.5.9 with OpenSSL, PDO, Mbstring and cURL extensions
+* Nginx (preferred) or Apache
 
-Now run the site with http://yourdomain.com/ or http://yourdomain.com/myfolder
-After successful running of the site, login as admin using the below details in the login form.
+### Setup
 
-      username: admin
-      password: agriya
+* Needs writable permission for `/tmp/` , `/media/` and `/webroot/` folders found within project path
+* Database schema 'app/Config/Schema/sql/bookorrent_with_empty_data.sql'
 
-To change administrator profile details, click 'My Account' in the top menu, then edit the profile information.
-To change administrator password, click 'Change Password' in the top menu, then change the password.
+### Contributing
+
+Our approach is similar to Magento. If anything is not clear, please [contact us](https://www.agriya.com/contact).
+
+All Submissions you make to bookorrent through GitHub are subject to the following terms and conditions:
+
+* You grant Agriya a perpetual, worldwide, non-exclusive, no charge, royalty free, irrevocable license under your applicable copyrights and patents to reproduce, prepare derivative works of, display, publicly perform, sublicense and distribute any feedback, ideas, code, or other information ("Submission") you submit through GitHub.
+* Your Submission is an original work of authorship and you are the owner or are legally entitled to grant the license stated above.
+
+
+### License
+
+Copyright (c) 2014-2018 [Agriya](https://www.agriya.com/).
+
+Dual License (OSL 3.0 & [Commercial License](https://www.agriya.com/contact))
