@@ -1,6 +1,6 @@
 # BookorRent
 
-BookorRent is an open source online platform for the booking and rental software. 
+BookorRent is an open source online platform for the booking and rental software. It is written in CakePHP with MySql.
 
 > This is project is part of Agriya Open Source efforts. BookorRent was originally a paid script and was selling around 12000 Euros. It is now released under dual license (OSL 3.0 & Commercial) for open source community benefits.
 
