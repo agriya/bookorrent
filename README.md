@@ -1,6 +1,6 @@
 # BookorRent
 
-BookorRent is an open source online platform for the booking and rental software. It is written in CakePHP with MySql.
+BookorRent is an open source online platform for booking and rental marketplace sites. Book or rent anything--events, services, spaces, or anything. Ideal for events booking with tickets, tuition marketplace, activities marketplace (Universe clones), errands /  services (Thumbtack clones), spaces marketplace (Airbnb clones), etc. Its generic approach can fit to any business model.
 
 > This is project is part of Agriya Open Source efforts. BookorRent was originally a paid script and was selling around 12000 Euros. It is now released under dual license (OSL 3.0 & Commercial) for open source community benefits.
 
@@ -74,6 +74,6 @@ All Submissions you make to bookorrent through GitHub are subject to the followi
 
 ### License
 
-Copyright (c) 2014-2018 [Agriya](https://www.agriya.com/).
+Copyright (c) 2014-2019 [Agriya](https://www.agriya.com/).
 
 Dual License (OSL 3.0 & [Commercial License](https://www.agriya.com/contact))
