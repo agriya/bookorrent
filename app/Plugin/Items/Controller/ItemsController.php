@@ -2385,7 +2385,7 @@ class ItemsController extends AppController
             $check_price = true;
             $check_price_type = true;
 			if(isset($custom_price_pre_night['id']) && !isset($custom_price_pre_night['start_date'])) {
-				continue;
+				
 			}
             if (!empty($this->request->data['Item']['is_have_definite_time']) && (!empty($this->request->data['Item']['is_people_can_book_my_time']) || !empty($this->request->data['Item']['is_sell_ticket']))) {
                 if (!empty($this->request->data['Item']['is_sell_ticket']) && !empty($this->request->data['CustomPricePerNight']['SellTicket'])) {
