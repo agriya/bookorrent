@@ -117,7 +117,7 @@ class ExtensionsThemesController extends AppController
             APP . 'View' . DS . 'Themed' . DS . $alias . DS,
         );
         $error = 0;
-        $folder = &new Folder;
+        $folder = new Folder;
         foreach($paths as $path) {
             if (is_dir($path)) {
                 if (!$folder->delete($path)) {

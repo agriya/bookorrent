@@ -52,7 +52,7 @@ class CmsShell extends AppShell
         $connection = 'default';
         $records = array();
         App::import('Model', 'CakeSchema', false);
-        $schema = &new CakeSchema(array(
+        $schema = new CakeSchema(array(
             'name' => 'app',
             'file' => $this->args['1'] . '_schema.php',
         ));
@@ -61,7 +61,7 @@ class CmsShell extends AppShell
             // get records
             $modelAlias = Inflector::camelize(Inflector::singularize($table));
             App::import('Model', 'Model', false);
-            $model = &new Model(array(
+            $model = new Model(array(
                 'name' => $modelAlias,
                 'table' => $table,
                 'ds' => $connection

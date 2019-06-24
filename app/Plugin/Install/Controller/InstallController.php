@@ -261,7 +261,7 @@ class InstallController extends InstallAppController
 				if ($db->config['datasource'] == 'Database/Postgres') {
 					$schema_file = 'postgres';
 				}
-                $schema = &new CakeSchema(array(
+                $schema = new CakeSchema(array(
                     'name' => 'app',
                     'file' => $schema_file . '_schema.php',
                 ));
@@ -287,7 +287,7 @@ class InstallController extends InstallAppController
                     $table = $classVars['table'];
                     $records = $classVars['records'];
                     App::import('Model', 'Model', false);
-                    $modelObject = &new Model(array(
+                    $modelObject = new Model(array(
                         'name' => $modelAlias,
                         'table' => $table,
                         'ds' => 'default',
@@ -320,7 +320,7 @@ class InstallController extends InstallAppController
         $this->set('title_for_layout', __l('Installation: Settings Configuration'));
         if (!empty($this->request->data)) {
             App::import('Model', 'Model', false);
-            $modelObject = &new Model(array(
+            $modelObject = new Model(array(
                 'name' => 'Setting',
                 'table' => 'settings',
                 'ds' => 'default',
